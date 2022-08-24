@@ -119,7 +119,21 @@ body {
     font-style: 2rem;
     line-height: 1.5;
     letter-spacing: 0.05em;
-    color: var(--color-secondary);
+    position: relative;
+}
+.sitnav__link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -6px;
+    right: 50%;
+    transition: width 0.3s linear;
+}
+.sitnav__link:hover::before {
+    width: 50%;
+    color: var(--primary-color);
 }
 .sitnav__link:hover {
     color: var(--color-primary) ;
