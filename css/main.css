@@ -275,6 +275,13 @@ body {
     margin-right: -13px;
 }
 
+.right-nav {
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+}
+
 @keyframes arrowAnimetion {
     0% {
         transform: translate(0);
@@ -304,11 +311,12 @@ body {
     
 }
 @media only screen and (max-width:992px) {
-    .hero__text {
-        color: var();
-    }
+
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:810px) {
+    .sitenav {
+        display: none;
+    }
     .hero__title {
         font-size: 6.9rem;
     }
