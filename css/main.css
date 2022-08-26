@@ -126,6 +126,7 @@ body {
     font-style: 2rem;
     line-height: 1.5;
     letter-spacing: 0.05em;
+    color: #292f36;
     position: relative;
 }
 .sitnav__link::after {
