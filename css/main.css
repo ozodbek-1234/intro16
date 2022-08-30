@@ -179,22 +179,17 @@ body {
 }
 .toggle {
     transform: translateX(0%);
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 .remove {
     transform: translateX(-100%);
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
 .right-nav {
     width: 60vw;
     height: 100vh;
+    background-color: lightskyblue;
     position: fixed;
-    width: 700px;
-    height: 700px;
-    background-image: url("../images/photo_2022-08-21_00-03-38.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     top: 0;
     left: 0;
     padding: 2rem;
@@ -205,10 +200,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-.right-nav .sitenav-item:not(:last-child){
+.right-nav .sitnav-item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 2rem;
-}
+    margin-bottom: 1.5rem;
+} 
 .right-nav a {
     font-size: 2rem;
 }
@@ -221,6 +216,10 @@ body {
     position: absolute;
     top: 30px;
     right: 30px;
+    color: #292f36;
+}
+.right-nav .sitnav__link {
+    color: #292f36;
 }
 
 /* MAIN HERO */
@@ -289,13 +288,6 @@ body {
 }
 .site-btn__icon svg:first-child {
     margin-right: -13px;
-}
-
-.right-nav {
-    width: 60vw;
-    height: 100vh;
-    position: absolute;
-    background-color: #fff;
 }
 
 @keyframes arrowAnimetion {
@@ -436,6 +428,37 @@ body {
     object-fit: contain;
     object-position: center;
 }
+.call__link img:hover {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    object-position: center;
+    animation: iconAnimetion 3s ease infinite;
+}
+@keyframes iconAnimetion {
+    0%{
+        transform: rotate(0deg);
+    }
+    2%{
+        transform: rotate(25deg);
+    }
+    4%{
+        transform: rotate(-25deg);
+    }
+    6%{
+        transform: rotate(15deg);
+    }
+    8%{
+        transform: rotate(-15deg);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+     transform: rotate(0deg); 
+    }
+}
 
 /* Respossir */
 
@@ -517,7 +540,7 @@ body {
     }
 
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:810px){
     .sitenav {
         display: none;
     }
@@ -537,7 +560,7 @@ body {
     }
     .call__img {
         width: 100%;
-        max-width: auto;
+        height  : auto;
     }
 }
 @media only screen and (max-width:576px) {
@@ -598,7 +621,7 @@ body {
         font-size: 1.8rem;
     }
     .call__btn {
-        padding: 1.2rem 2rem;
+        padding: 1.2rem 2.5rem;
     }
 }
 
