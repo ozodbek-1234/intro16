@@ -498,6 +498,7 @@ body {
     background-color: var(--color-white);
     border-radius: 3rem;
     padding: 5rem 3rem 4.5rem 3.5rem;
+    transition: transform .6s ease;
 }
 .abaut-us__item-wrapper {
     display: flex;
@@ -510,9 +511,9 @@ body {
     object-fit: contain;
     object-position: center;
     margin-right: 2rem;
-    transition: transform .6s ease;
+
 }
-.abaut-us__item-img:hover {
+.abaut-us__item:hover {
     transform: scale(1.1);
 }
 .abut-us__item-name span:first-child {
