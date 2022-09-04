@@ -530,6 +530,25 @@ body {
 .abut-us__text {
     font-size: 2rem;
 }
+/* partener staylec */
+.partner {
+    margin-bottom: 11.3rem;
+}
+.partners__list { 
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 8rem;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.paryners__item {
+}
+.partners__img {
+    object-fit: contain;
+    object-position: center;
+}
 
 /* Respossir */
 
@@ -672,6 +691,16 @@ body {
     }
     .abaut-us__title {
         font-size: 3.5rem;
+    }
+    .partners__list { 
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+    .paryners__item:nth-child(2) .partners__img {
+        max-width: 70%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto
     }
 
 }
