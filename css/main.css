@@ -566,6 +566,10 @@ li {
 .partners__img {
     object-fit: contain;
     object-position: center;
+    transition: transform .6s ease;
+}
+.partners__img:hover {
+    transform: scale(1.2);
 }
 
 /* project section */
@@ -600,6 +604,10 @@ li {
     object-position: center;
     display: block;
     margin-bottom: 2.4rem; 
+    transition: transform .6s ease;
+}
+.projects__img:hover {
+    transform: scale(1.05);
 }
 .projects__item-wrapper {
     display: flex;
@@ -673,6 +681,7 @@ li {
     row-gap: 4rem;
 }
 .blogs__item {
+    overflow: hidden;
     border: 1px solid var(--color-border);
     border-radius: 62px;
     padding: 2.1rem 2.1rem 4rem;
@@ -688,6 +697,10 @@ li {
     margin-bottom: 1.5rem; 
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform .6s ease;
+}
+.blogs__img:hover {
+    transform: scale(1.05);
 }
 .blogs__img span {
     background-color: var(--white-bg-color);
