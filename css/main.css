@@ -752,6 +752,75 @@ li {
     width: 9px;
     height: 16px;
 }
+/* FOOTER SITALES */
+.consultation {
+    padding: 14.1rem 12rem ;
+    margin-bottom: 12.9rem;
+}
+.consultation__wrapper {
+    width: 1200px;
+    height: 414px;
+    background-color: var(--blue-bg-color);
+    border-radius: 70px;
+    padding:10rem 33.3rem 9.5rem;
+}
+.consultation-title {
+    text-align: center;
+    align-items: center;
+    color: var(--white-bg-color);
+    margin: 0 auto;
+    margin-bottom: 0.9rem;
+}
+.consultation-text {
+    color: var(--white-bg-color);
+    text-align: center;
+    margin-bottom: 3.1rem;
+}
+.consultation__box {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.hero__btn {
+    background-color: var(--color-primary);
+    padding: 2.1rem 3.4rem 2.3rem 6.7rem;
+}
+.consultation-btn {
+    padding: 1.7rem 1.9rem 1.6rem 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    border-radius: 18px;
+    border: 2px solid var(--blue-bg-color);
+    transition: all .3s ease;
+}
+.consultation-btn:hover {
+    background-color: transparent;
+    color: var(--white-bg-color);
+    border: 2px solid var(--color-primary);
+}
+.consultation-btn:hover .consultation-btn__icon {
+    animation: arrowAnimetion 2s linear;
+}
+.consultation-btn:hover .consultation-btn__icon svg path {
+    stroke: var(--color-primary);
+}
+.consultation-btn__icon {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+.consultation-btn__icon svg:first-child {
+    margin-right: -13px;
+}
+.consultation-btn__icon {
+}
+
 
 /* Respossir */
 
